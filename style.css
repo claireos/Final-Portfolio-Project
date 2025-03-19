@@ -76,3 +76,22 @@ nav ul li a:hover {
         margin: 10px 0;
     }
 }
+
+.image-container {
+    display: flex;
+    justify-content: center; /* Centers the image horizontally */
+    margin-top: 20px; /* Adds space between the nav bar and image */
+}
+
+.main-image {
+    max-width: 70%; /* Ensures it takes up a good portion of the screen */
+    height: auto; /* Maintains aspect ratio */
+    border-radius: 10px; /* Optional: adds rounded corners */
+}
+
+/* Responsive design: Adjust image size for smaller screens */
+@media (max-width: 768px) {
+    .main-image {
+        max-width: 90%; /* Adjusts for smaller screens */
+    }
+}
