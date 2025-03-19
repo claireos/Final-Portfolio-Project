@@ -9,7 +9,7 @@ header {
     flex-direction: column; /* stacks items vertically */
     align-items: center; /* Centers the text */
     justify-content: center; /* Centers the text */
-    height: 100vh; /* makes sure text takes up entire viewport height */
+    height: 60vh; 
     text-align: center; /* makes sure text is centered */
 }
 
