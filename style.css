@@ -9,16 +9,16 @@ header {
     flex-direction: column; /* stacks items vertically */
     align-items: center; /* Centers the text */
     justify-content: center; /* Centers the text */
-    height: 60vh; 
-    text-align: center; /* makes sure text is centered */
+    height: auto; /* Allows natural height */
+    padding: 50px 0;
+    text-align: center; /* Ensures text is centered */
 }
 
-/* Styling for my name */
-
+/* Styling for name */
 h1 {
     font-size: 48px;
     font-weight: bold;
-    margin: 0; /* removes default margin so "soprano" will be directly below */
+    margin: 0;
 }
 
 /* Styling for "soprano" */
@@ -30,49 +30,49 @@ h2 {
 
 /* Navigation bar */
 nav {
-    background-color: #333; /* Dark background for contrast */
-    width: 100%; /* Ensures nav spans the full width of the page */
-    padding: 10px 0; /* Adds padding for better spacing */
+    background-color: #333;
+    width: 100%;
+    padding: 10px 0;
 }
 
-/* Styling and centering nav menu */
-ul {
-    list-style-type: none; /* Removes bullet points */
+/* Navigation menu (Ensures it aligns horizontally) */
+nav ul {
+    list-style-type: none;
     margin: 0;
     padding: 0;
-    display: flex; /* Displays items in a row */
-    justify-content: center; /* Centers the navigation menu */
-    gap: 20px; /* Ensures equal spacing between nav items */
+    display: flex; /* Makes menu horizontal */
+    justify-content: center;
+    gap: 20px;
+}
+
+/* List items should behave properly */
+nav ul li {
+    display: inline-block;
 }
 
 /* Navigation links */
-li {
-    margin: 0; /* Removes default margin to maintain even spacing */
-}
-a {
-    text-decoration: none; /* Removes underline from links */
-    color: white; /* Makes text white for contrast */
+nav ul li a {
+    text-decoration: none;
+    color: white;
     font-size: 18px;
-    padding: 10px 20px; /* Increases padding to make links easier to click */
-    display: inline-block; /* Ensures padding applies properly */
+    padding: 10px 20px;
+    display: inline-block;
 }
 
-/* Hover effect for links */
-a:hover {
-    background-color: #555; /* Slightly lighter background on hover */
-    border-radius: 5px; /* Soft rounded corners for a modern look */
+/* Hover effect */
+nav ul li a:hover {
+    background-color: #555;
+    border-radius: 5px;
 }
 
 /* Responsive styling for smaller screens */
 @media (max-width: 600px) {
-    ul {
-        flex-direction: row; 
-        align-items: center; /* Centers items when stacked */
+    nav ul {
+        flex-direction: column; /* Stack menu items vertically */
+        align-items: center;
     }
 
-    a {
-        display: block; /* Makes links take full width for better tap targets */
-        text-align: center; /* Centers text */
-        width: 100%; /* Ensures full width for better usability */
+    nav ul li {
+        margin: 10px 0;
     }
 }
