@@ -1,41 +1,13 @@
-
 body {
     margin: 0;
     font-family: Arial, sans-serif;
 }
 
-nav {
-    background-color: #333;
-    padding: 10px 0;
-}
-
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-}
-
-li {
-    margin: 0 15px;
-}
-
-a {
-    text-decoration: none;
-    color: white;
-    font-size: 18px;
-    padding: 10px;
-}
-
-a:hover {
-    background-color: #555;
-    border-radius: 5px;
-}
-
+/* Centering and styling header */
 header {
-    text-align: center;
-    margin-top: 50px;
+    text-align: center; /* Centers the text */
+    margin-top: 50px; /* Adds space above the header */
+    margin-bottom: 20px; /* Adds space below the header to separate it from the nav */
 }
 
 h1 {
@@ -46,4 +18,55 @@ h1 {
 h2 {
     font-size: 24px;
     font-style: italic;
+}
+
+/* Navigation bar */
+nav {
+    background-color: #333; /* Dark background for contrast */
+    width: 100%; /* Ensures nav spans the full width of the page */
+    padding: 10px 0; /* Adds padding for better spacing */
+}
+
+/* Styling and centering nav menu */
+ul {
+    list-style-type: none; /* Removes bullet points */
+    margin: 0;
+    padding: 0;
+    display: flex; /* Displays items in a row */
+    justify-content: center; /* Centers the navigation menu */
+    gap: 20px; /* Ensures equal spacing between nav items */
+}
+
+/* Navigation list items */
+li {
+    margin: 0; /* Removes default margin to maintain even spacing */
+}
+
+/* Navigation links */
+a {
+    text-decoration: none; /* Removes underline from links */
+    color: white; /* Makes text white for contrast */
+    font-size: 18px;
+    padding: 10px 20px; /* Increases padding to make links easier to click */
+    display: inline-block; /* Ensures padding applies properly */
+}
+
+/* Hover effect for links */
+a:hover {
+    background-color: #555; /* Slightly lighter background on hover */
+    border-radius: 5px; /* Soft rounded corners for a modern look */
+}
+
+/* Responsive styling for smaller screens */
+@media (max-width: 600px) {
+    ul {
+        flex-direction: column; /* Stacks menu items vertically */
+        align-items: center; /* Centers items when stacked */
+    }
+
+    a {
+        display: block; /* Makes links take full width for better tap targets */
+        text-align: center; /* Centers text */
+        width: 100%; /* Ensures full width for better usability */
+    }
 }
