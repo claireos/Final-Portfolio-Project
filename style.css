@@ -5,19 +5,27 @@ body {
 
 /* Centering and styling header */
 header {
-    text-align: center; /* Centers the text */
-    margin-top: 50px; /* Adds space above the header */
-    margin-bottom: 20px; /* Adds space below the header to separate it from the nav */
+    display: flex;
+    flex-direction: column; /* stacks items vertically */
+    align-items: center; /* Centers the text */
+    justify-content: center; /* Centers the text */
+    height: 100vh; /* makes sure text takes up entire viewport height */
+    text-align: center; /* makes sure text is centered */
 }
+
+/* Styling for my name */
 
 h1 {
-    font-size: 36px;
+    font-size: 48px;
     font-weight: bold;
+    margin: 0; /* removes default margin so "soprano" will be directly below */
 }
 
+/* Styling for "soprano" */
 h2 {
     font-size: 24px;
     font-style: italic;
+    margin: 10px;
 }
 
 /* Navigation bar */
@@ -37,12 +45,10 @@ ul {
     gap: 20px; /* Ensures equal spacing between nav items */
 }
 
-/* Navigation list items */
+/* Navigation links */
 li {
     margin: 0; /* Removes default margin to maintain even spacing */
 }
-
-/* Navigation links */
 a {
     text-decoration: none; /* Removes underline from links */
     color: white; /* Makes text white for contrast */
@@ -60,7 +66,7 @@ a:hover {
 /* Responsive styling for smaller screens */
 @media (max-width: 600px) {
     ul {
-        flex-direction: column; /* Stacks menu items vertically */
+        flex-direction: row; 
         align-items: center; /* Centers items when stacked */
     }
 
