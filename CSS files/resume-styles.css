@@ -1,0 +1,34 @@
+/* General Styling */
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #2B1700;
+    margin: 0;
+    padding: 0;
+    background-color: #f6eee3;
+    text-align: center;
+}
+
+/* Page Heading */
+h1 {
+    margin: 20px 0;
+    font-size: 2em;
+    font-style: italic;
+}
+
+/* PDF Container */
+.pdf-container {
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Embed PDF */
+iframe {
+    width: 100%;
+    height: 600px;
+    border: none;
+}
