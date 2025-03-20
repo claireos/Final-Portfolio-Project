@@ -1,0 +1,93 @@
+/* Reset default styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Center the heading */
+header {
+    padding: 20px 0;
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin: 0;
+}
+
+/* Paragraph Sections (Full-width, normal text) */
+.paragraph-section {
+    max-width: 70%;
+    margin: 40px auto;
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: left;
+}
+
+/* Two-Column Sections (With Title, Subtitle, and Aligned Text) */
+.two-column-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    gap: 40px;
+    max-width: 80%;
+    margin: 40px auto;
+    text-align: left;
+}
+
+/* Ensures each line of text aligns properly */
+.column p {
+    margin: 5px 0; /* Removes excess space between lines */
+    white-space: nowrap; /* Keeps short sentences on one line */
+}
+
+/* Title Styling (Same as One-Column Sections) */
+.column-title, .one-column-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 3px;
+}
+
+/* Subtitle Styling (Italicized, Same as One-Column Sections) */
+.column-subtitle, .one-column-subtitle {
+    font-size: 18px;
+    font-style: italic;
+    margin-bottom: 5px;
+}
+
+/* Column paragraph style for one-column and two-column sections  */
+.column p {
+    margin: 2px 0; /* Reduces space between lines */
+    line-height: 1.3; /* Adjusts line spacing to be tighter */
+    white-space: nowrap; /* Prevents unintended line breaks */
+}
+
+/* One-Column Sections (Formatted for Readability) */
+.one-column-section {
+    max-width: 60%;
+    margin: 30px auto;
+    text-align: left;
+}
+
+/* Responsive Design: Adjust layout for smaller screens */
+@media (max-width: 768px) {
+    .two-column-section {
+        grid-template-columns: 1fr; /* Stacks text on smaller screens */
+        text-align: center;
+    }
+
+    .column {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+
+    .paragraph-section,
+    .one-column-section {
+        max-width: 90%;
+    }
+}
+/* Add space for stanza breaks */
+.stanza-break {
+    margin-bottom: 20px; /* Adjust spacing between stanzas */
+}

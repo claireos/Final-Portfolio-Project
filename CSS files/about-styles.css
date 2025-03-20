@@ -1,0 +1,51 @@
+/* Reset default margins */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+/* Center the heading */
+header {
+    padding: 20px 0;
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin: 0;
+}
+
+/* Center the image */
+.about-image-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; /* Adds space between heading and image */
+}
+
+.about-image {
+    max-width: 60%; /* Ensures image takes up a good portion but not the entire screen */
+    height: auto;
+    border-radius: 10px; /* Optional rounded corners */
+}
+
+/* Style the body text */
+.about-text {
+    max-width: 70%;
+    margin: 30px auto; /* Centers the text section */
+    font-size: 18px;
+    line-height: 1.6; /* Improves readability */
+    text-align: left; /* Aligns text for better readability */
+}
+
+/* Responsive Design: Adjust image and text on smaller screens */
+@media (max-width: 768px) {
+    .about-image {
+        max-width: 80%; /* Make image larger on small screens */
+    }
+
+    .about-text {
+        max-width: 90%;
+        text-align: center;
+    }
+}

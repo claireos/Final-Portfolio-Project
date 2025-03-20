@@ -1,0 +1,74 @@
+/* Reset default margins */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+/* Center the heading at the top */
+header {
+    padding: 20px 0;
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin: 0;
+}
+
+/* Container for image and text */
+.schedule-container {
+    display: flex;
+    align-items: center; /* Aligns image and text vertically */
+    justify-content: center; /* Centers content on the page */
+    gap: 30px; /* Adds space between image and text */
+    max-width: 80%;
+    margin: 40px auto; /* Centers container */
+}
+
+/* Style the image */
+.schedule-image {
+    max-width: 40%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Style the text section */
+.schedule-text {
+    max-width: 50%;
+    text-align: left;
+}
+
+/* Sub-heading styling */
+.schedule-text h2 {
+    font-size: 24px; /* Larger text for sub-heading */
+    font-weight: bold;
+}
+.schedule-text h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 5px; 
+}
+
+/* Body text styling */
+.schedule-description {
+    font-size: 18px; /* Smaller text for description */
+    line-height: 1.5;
+}
+
+/* Responsive design: Stack image and text on smaller screens */
+@media (max-width: 768px) {
+    .schedule-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .schedule-image {
+        max-width: 80%;
+    }
+
+    .schedule-text {
+        max-width: 90%;
+        text-align: center;
+    }
+}
