@@ -16,6 +16,7 @@ header {
 h1 {
     font-size: 36px;
     font-weight: bold;
+    font-style: italic;
     margin: 0;
 }
 
@@ -114,4 +115,36 @@ h1 {
 .subheading .details {
     text-align: right;
     font-size: 20px;
+}
+/* Style for recital poster image */
+.centered-image {
+    display: block;
+    max-width: 60%; 
+    height: auto; /* Maintains aspect ratio */
+    margin: 20px auto; /* Centers the image */
+}
+/* General styling for text boxes */
+.text-box {
+    max-width: 70%; /* Adjust width as needed */
+    margin: 20px auto; /* Centers the box */
+    padding: 15px;
+    border: 2px solid #000; /* Adds a border */
+    background-color: #f8f8f8; /* Light background */
+    font-style: italic; /* Makes the text italicized */
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: center; /* Centers text inside */
+}
+
+/* Specific styling for the works cited box */
+.works-cited-box {
+    max-width: 70%;
+    margin: 40px auto; /* Adds more space before */
+    padding: 20px;
+    border: 2px solid #000;
+    background-color: #f1f1f1; /* Slightly different background */
+    font-style: normal; /* Regular text for citations */
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: left; /* Aligns text to left for readability */
 }
