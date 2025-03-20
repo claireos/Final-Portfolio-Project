@@ -1,8 +1,10 @@
 /* Reset default margins */
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #2B1700;
     text-align: center;
+    background-color: #f6eee3;
 }
 
 /* Center the heading at the top */
@@ -14,6 +16,7 @@ h1 {
     font-size: 36px;
     font-weight: bold;
     margin: 0;
+    font-style: italic;
 }
 
 /* Container for image and text */

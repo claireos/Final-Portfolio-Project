@@ -3,40 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PDF Viewer</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.12.313/pdf.min.js"></script>
+    <title>Resume</title>
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href= "CSS files/resume-styles.css">
 </head>
 <body>
-    <h2>PDF Viewer</h2>
-    <canvas id="pdf-viewer"></canvas>
 
-    <script>
-        var url = "documents/claire-resume.pdf"; // Ensure the file exists in this location
+    <h1>Resume</h1>
+    <div class="pdf-container">
+        <iframe src="documents/claire-resume.pdf"></iframe>
+    </div>
 
-        pdfjsLib.getDocument(url).promise.then(function(pdf) {
-            console.log("PDF loaded successfully");
-
-            pdf.getPage(1).then(function(page) {
-                console.log("Page loaded");
-
-                var scale = 1.5;
-                var viewport = page.getViewport({ scale: scale });
-
-                var canvas = document.getElementById('pdf-viewer');
-                var context = canvas.getContext('2d');
-
-                canvas.height = viewport.height;
-                canvas.width = viewport.width;
-
-                var renderContext = {
-                    canvasContext: context,
-                    viewport: viewport
-                };
-                page.render(renderContext);
-            });
-        }).catch(function(error) {
-            console.error("Error loading PDF: ", error);
-        });
-    </script>
 </body>
 </html>
