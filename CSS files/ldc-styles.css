@@ -1,7 +1,9 @@
 /* Reset default styles */
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #2B1700;
+    background-color: #f6eee3;
     text-align: center;
     padding: 20px;
 }
@@ -90,4 +92,26 @@ h1 {
 /* Add space for stanza breaks */
 .stanza-break {
     margin-bottom: 20px; /* Adjust spacing between stanzas */
+}
+/* Subheading Section: Title on Left, Details on Right */
+.subheading {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    max-width: 80%;
+    margin: 20px auto;
+    font-size: 22px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* Title (Left Side) */
+.subheading .title {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+/* Details (Right Side, Italicized and Smaller) */
+.subheading .details {
+    text-align: right;
+    font-size: 20px;
 }

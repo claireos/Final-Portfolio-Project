@@ -1,6 +1,9 @@
+
+
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    background-color:#f6eee3;
+
 }
 
 /* Centering and styling header */
@@ -19,18 +22,22 @@ h1 {
     font-size: 48px;
     font-weight: bold;
     margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #2B1700
 }
 
 /* Styling for "soprano" */
 h2 {
     font-size: 24px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     font-style: italic;
     margin: 10px;
+    color: #2B1700
 }
 
 /* Navigation bar */
 nav {
-    background-color: #333;
+    background-color: #2B1700;
     width: 100%;
     padding: 10px 0;
 }
@@ -53,8 +60,9 @@ nav ul li {
 /* Navigation links */
 nav ul li a {
     text-decoration: none;
-    color: white;
+    color: #f6eee3;
     font-size: 18px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     padding: 10px 20px;
     display: inline-block;
 }
